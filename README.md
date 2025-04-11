@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/four-card-feature-section-with-css-grid-and-clamp-function-JyZpwxEOVF](https://www.frontendmentor.io/solutions/four-card-feature-section-with-css-grid-and-clamp-function-JyZpwxEOVF)
+- Live Site URL: [https://ryyhardy.github.io/frontend-mentor-four-card-feature-section/](https://ryyhardy.github.io/frontend-mentor-four-card-feature-section/)
 
 ## My process
 

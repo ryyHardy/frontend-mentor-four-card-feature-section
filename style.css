@@ -57,7 +57,7 @@ header p {
   position: relative;
   background-color: var(--white);
   padding: 2em;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0 0.5em 1em hsl(0, 0%, 80%);
   aspect-ratio: 1.2 / 1;
   max-width: 300px;

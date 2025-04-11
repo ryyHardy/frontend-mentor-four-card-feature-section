@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap");
+
+:root {
+  /* Primary colors */
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  /* Neutral colors */
+  --dark-gray: hsl(234, 12%, 34%);
+  --light-gray: hsl(212, 6%, 44%);
+  --white: hsl(0, 0%, 100%);
+  /* Font weights */
+  --weight-light: 200;
+  --weight-mid: 400;
+  --weight-bold: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 8rem);
+}
+
+header {
+  color: var(--dark-gray);
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+header h1 {
+  margin: 0.4em;
+}
+
+header h1 span {
+  font-weight: var(--weight-light);
+}
+
+header p {
+  color: var(--light-gray);
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vh;
+}
+
+.gallery-card {
+  position: relative;
+  background-color: var(--white);
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0.5em 1em hsl(0, 0%, 80%);
+  aspect-ratio: 1.2 / 1;
+  max-width: 300px;
+  width: auto;
+  font-size: 80%;
+}
+
+.gallery-card p {
+  color: var(--light-gray);
+}
+
+.gallery-card img {
+  position: absolute;
+  width: 20%;
+  bottom: 20%;
+  right: 10%;
+}
+
+.supervisor {
+  border-top: 0.4em solid var(--cyan);
+}
+
+.team-builder {
+  border-top: 0.4em solid var(--red);
+}
+
+.karma {
+  border-top: 0.4em solid var(--orange);
+}
+
+.calculator {
+  border-top: 0.4em solid var(--blue);
+}
+
+.attribution {
+  margin-top: 5%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    display: grid;
+    place-content: center;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+  }
+
+  .gallery-card {
+    font-size: clamp(0.5em, 1vw, 80%);
+  }
+
+  .supervisor {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .calculator {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+}
